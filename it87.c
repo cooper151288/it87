@@ -134,37 +134,8 @@ static inline void superio_exit(int ioreg, bool doexit)
 }
 
 /* Logical device 4 registers */
-#define IT8712F_DEVID 0x8712
-#define IT8705F_DEVID 0x8705
-#define IT8716F_DEVID 0x8716
-#define IT8718F_DEVID 0x8718
-#define IT8720F_DEVID 0x8720
-#define IT8721F_DEVID 0x8721
-#define IT8726F_DEVID 0x8726
+
 #define IT8728F_DEVID 0x8728
-#define IT8732F_DEVID 0x8732
-#define IT8736F_DEVID 0x8736
-#define IT8738E_DEVID 0x8738
-#define IT8792E_DEVID 0x8733
-#define IT8771E_DEVID 0x8771
-#define IT8772E_DEVID 0x8772
-#define IT8781F_DEVID 0x8781
-#define IT8782F_DEVID 0x8782
-#define IT8783E_DEVID 0x8783
-#define IT8786E_DEVID 0x8786
-#define IT8790E_DEVID 0x8790
-#define IT8603E_DEVID 0x8603
-#define IT8606E_DEVID 0x8606
-#define IT8607E_DEVID 0x8607
-#define IT8613E_DEVID 0x8613
-#define IT8620E_DEVID 0x8620
-#define IT8622E_DEVID 0x8622
-#define IT8623E_DEVID 0x8623
-#define IT8625E_DEVID 0x8625
-#define IT8628E_DEVID 0x8628
-#define IT8655E_DEVID 0x8655
-#define IT8665E_DEVID 0x8665
-#define IT8686E_DEVID 0x8686
 
 /* Logical device 4 (Environmental Monitor) registers */
 #define IT87_ACT_REG		0x30
