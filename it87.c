@@ -2,48 +2,9 @@
  *  it87.c - Part of lm_sensors, Linux kernel modules for hardware
  *           monitoring.
  *
- *  The IT8705F is an LPC-based Super I/O part that contains UARTs, a
- *  parallel port, an IR port, a MIDI port, a floppy controller, etc., in
- *  addition to an Environment Controller (Enhanced Hardware Monitor and
- *  Fan Controller)
- *
- *  This driver supports only the Environment Controller in the IT8705F and
- *  similar parts.  The other devices are supported by different drivers.
- *
- *  Supports: IT8603E  Super I/O chip w/LPC interface
- *            IT8606E  Super I/O chip w/LPC interface
- *            IT8607E  Super I/O chip w/LPC interface
- *            IT8613E  Super I/O chip w/LPC interface
- *            IT8620E  Super I/O chip w/LPC interface
- *            IT8622E  Super I/O chip w/LPC interface
- *            IT8623E  Super I/O chip w/LPC interface
- *            IT8625E  Super I/O chip w/LPC interface
- *            IT8628E  Super I/O chip w/LPC interface
- *            IT8655E  Super I/O chip w/LPC interface
- *            IT8665E  Super I/O chip w/LPC interface
- *            IT8686E  Super I/O chip w/LPC interface
- *            IT8705F  Super I/O chip w/LPC interface
- *            IT8712F  Super I/O chip w/LPC interface
- *            IT8716F  Super I/O chip w/LPC interface
- *            IT8718F  Super I/O chip w/LPC interface
- *            IT8720F  Super I/O chip w/LPC interface
- *            IT8721F  Super I/O chip w/LPC interface
- *            IT8726F  Super I/O chip w/LPC interface
- *            IT8728F  Super I/O chip w/LPC interface
- *            IT8732F  Super I/O chip w/LPC interface
- *            IT8736F  Super I/O chip w/LPC interface
- *            IT8738E  Super I/O chip w/LPC interface
- *            IT8758E  Super I/O chip w/LPC interface
- *            IT8771E  Super I/O chip w/LPC interface
- *            IT8772E  Super I/O chip w/LPC interface
- *            IT8781F  Super I/O chip w/LPC interface
- *            IT8782F  Super I/O chip w/LPC interface
- *            IT8783E/F Super I/O chip w/LPC interface
- *            IT8786E  Super I/O chip w/LPC interface
- *            IT8790E  Super I/O chip w/LPC interface
- *            IT8792E  Super I/O chip w/LPC interface
- *            Sis950   A clone of the IT8705F
- *
+ *  This driver supports only the Environment Controller in the IT8728F.
+ *  The purpose of this branch is to experiment with different features. 
+ *            
  *  Copyright (C) 2001 Chris Gauthron
  *  Copyright (C) 2005-2010 Jean Delvare <jdelvare@suse.de>
  *
