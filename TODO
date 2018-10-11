@@ -1,0 +1,7 @@
+Feel free to write something that does any of these.
+
+-Bash script to enable/configure closed loop mode.
+-Implement closed loop control into the driver.
+-Find out what "Special FAN" is all about
+-try to find more useful features. Smoothing and min.pwm come to mind.
+-with anything useful, make a script, then look to implement into the driver.
