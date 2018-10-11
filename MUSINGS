@@ -1,0 +1,16 @@
+Here, I will discuss reults from my poking around with the IT8728F, so I know what I've done and to share the results so more features can be exposed.
+
+CLOSED LOOP CONTROL
+-yes it works.
+-yes the documentation is poor, but you should read it anyway
+
+-Set the relevant register.from 0x15-0x17 to 0x84-0x86, depending on which temp input you want.
+-You will want to increase the smoothing step frequency from the 1Hz default.
+-You may want to enable smoothing. It's not in the datasheet for this mode but it stops it ramping up and down like crazy.
+ It will affect your other fans so be careful.
+ -You will want to reduce the target zone value from default as well.
+ 
+ Set like this, you get fairly smooth.closed loop control.
+ I'll write a handy bash script to set this up soon, then it can be added to the driver.
+ 
+ If anyone wishes to add to the driver, share test results, write a script, fee free to make a pull request.
