@@ -6,10 +6,14 @@ CLOSED LOOP CONTROL
 
 -Set the relevant register.from 0x15-0x17 to 0x84-0x86, depending on which temp input you want.
 -You will want to increase the smoothing step frequency from the 1Hz default.
--You may want to enable smoothing. It's not in the datasheet for this mode but it stops it ramping up and down like crazy.
+-You may want to enable smoothing. It's not in the datasheet for this mode but it sto`s it ramping up and down like crazy.
  It will affect your other fans so be careful.
  -You will want to reduce the target zone value from default as well.
  
+ -Setting too low a value for the target RPM will make the fans speed up and slow down, giving unstable RPM values. 
+ IT8728 must Be a bit too slow to give good closed loop control on heavy fans w/voltage control.
+ My board only gas actual PWM on the CPU fan header (pwms 1,3- voltage/pwm on CPU, pwm2 is voltage on sys_fan header) 
+
  Set like this, you get fairly smooth.closed loop control.
  I'll write a handy bash script to set this up soon, then it can be added to the driver.
  
