@@ -1,12 +1,16 @@
-DRIVER REMOVAL NOTICE
-=====================
+HELP NEEDED
+============
 
-I have been unable to meet support demands for this driver, resulting
-in unpleasant experience and frustration for everyone involved.
+I have been learning about the chips this driver supports and want
+to add support for closed-loop fan control. I know what registers
+to read/write and have done extensive testing on the chips I have
+available,but I don't know how to implement this in the driver code.
 
-Consequently, the driver will be removed from github, effective
-August 1, 2018. Interested parties are encouraged to clone the driver
-before that time and to start maintaining it on their own.
+I aim for this fork to be about feature enablement, therefore this
+driver should be considered experimental.
+USE AT YOUR OWN RISK.
+I ACCEPT NO RESPONSIBILITY FOR ANYTHING THIS DRIVER DOES OR DOES NOT DO.
+I will make no attempt to convert this into patches for mainline.
 
 
 Kernel driver it87
